@@ -39,7 +39,7 @@ app.get("/", function(req, res) {
 // from the scrapedData collection as a json (this will be populated
 // by the data you scrape using the next route)
 
-app.get("/all", function(res, req){
+app.get("/all", function(req, res){
   db.scrapedData.find({}, function(error, found){
     if(error){
       console.log(error);
